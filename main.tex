@@ -1,0 +1,82 @@
+% !TeX program = xelatex 
+\documentclass[10pt,a4paper]{article} % Paper size, default font size and one-sided paper
+\usepackage{lscape}
+\usepackage{rotating}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{caption}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{geometry}
+\usepackage{helvet}
+\usepackage{float}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{fontspec}
+\usepackage[colorlinks = true,
+linkcolor = blue,
+urlcolor  = blue,
+citecolor = blue,
+anchorcolor = blue]{hyperref}
+\geometry{
+a4paper,
+total={170mm,257mm},
+left=20mm,
+top=20mm,
+footskip=2cm,
+}
+\newfontfamily{\arial}{Arial CE}
+\newfontfamily{\proxima}{Proxima Nova}
+\setmainfont{Proxima Nova}
+\renewcommand{\footrulewidth}{0.4pt}
+\setlength\footskip{1cm}
+\pagestyle{fancy}
+\setlength\textheight{220mm}
+\setlength\headheight{34pt}
+\pagenumbering{arabic}	
+\fancyhf{}
+\chead{\includegraphics[width=8cm]{logo.png}}
+\cfoot{ \color{gray} \arial [PLEASE CHECK IF THIS IS THE CORRECT VERSION BEFORE USE] | PRIVATE \& CONFIDENTIAL \\
+	\textit{AgniKul Cosmos Private Limited, Chennai | www.agnikul.in | humancapital@agnikul.in \\
+		910, Syndicate Bank Colony, Anna Nagar West Extension, Chennai - 600101 \\
+		+91 72472 46334  /  CIN: U74999TN2017PTC119779} \\ \textbf{\thepage}}
+\title{ Flight Computer V1.0}
+\begin{document}
+	\maketitle
+	\thispagestyle{fancy}
+	\newpage
+	\tableofcontents
+	\newpage
+	\textbf{Document history log:}		
+	\begin{center}
+		
+		\begin{tabular}{|p{5.5cm}|p{5cm}|p{5cm}|}
+			\hline
+			\textbf{Status (Baseline/Revision/Closed)} & \textbf{Effective Date} & \textbf{Description}\\
+			\hline
+			&   &  \\
+			\hline
+		\end{tabular}
+	\end{center}
+	
+	
+	\begin{center}
+			
+	\begin{table}[b]
+		\textbf{Changes made from previous version:} \\
+		\begin{tabular}{|p{5 cm}|p{2cm}|p{8cm}|}
+			\hline
+			\textbf{Section} & \textbf{SNo} & \textbf{Changes Made}\\
+			\hline
+		 &  &  \\
+			\hline
+		 & &  \\
+			\hline
+		\end{tabular}
+	\end{table}
+	\end{center}
+	
+	\input{chapter1}
+\end{document}

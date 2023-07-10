@@ -1,0 +1,52 @@
+<mxfile host="app.diagrams.net" modified="2023-06-23T10:23:08.844Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="7whfotC6Rd-1siTrE43i" version="21.5.0" type="device">
+  <diagram name="Page-1" id="-H8YCBJejmVy7gDKwACE">
+    <mxGraphModel dx="1362" dy="746" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="3LD2GIB63H8NhBfpTNJM-3" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="200" width="320" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="3LD2GIB63H8NhBfpTNJM-4" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Telemetry&lt;/font&gt;" style="text;strokeColor=default;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="230" y="70" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="3LD2GIB63H8NhBfpTNJM-6" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;LCC&lt;/font&gt;" style="text;strokeColor=default;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="90" y="520" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="3LD2GIB63H8NhBfpTNJM-7" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;CRIO&lt;/font&gt;" style="text;strokeColor=default;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="260" y="520" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="3LD2GIB63H8NhBfpTNJM-14" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="200" width="370" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="3LD2GIB63H8NhBfpTNJM-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=3;strokeColor=#009900;" edge="1" parent="1" source="3LD2GIB63H8NhBfpTNJM-16" target="3LD2GIB63H8NhBfpTNJM-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3LD2GIB63H8NhBfpTNJM-16" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Ethernet Transmitter&lt;/font&gt;" style="text;strokeColor=default;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="490" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3LD2GIB63H8NhBfpTNJM-17" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;TCP Client (1.1.1.2)&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;port:&amp;nbsp;&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="480" y="290" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="3LD2GIB63H8NhBfpTNJM-18" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;sequencer&lt;/font&gt;" style="text;strokeColor=default;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="700" y="240" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3LD2GIB63H8NhBfpTNJM-19" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Fault Monitor&lt;/font&gt;" style="text;strokeColor=default;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="700" y="320" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3LD2GIB63H8NhBfpTNJM-20" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;FC&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="210" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3LD2GIB63H8NhBfpTNJM-21" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Ethernet Receiver&lt;/font&gt;" style="text;strokeColor=default;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="190" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3LD2GIB63H8NhBfpTNJM-22" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;TCP&lt;br&gt;1.1.1.1&lt;br&gt;port: 9999&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="175" y="310" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="3LD2GIB63H8NhBfpTNJM-28" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;EC&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="470" y="200" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,78 @@
+% !TeX program = xelatex 
+\documentclass[10pt,a4paper]{article} % Paper size, default font size and one-sided paper
+\usepackage{lscape}
+\usepackage{rotating}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{caption}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{geometry}
+\usepackage{helvet}
+\usepackage{float}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{fontspec}
+\geometry{
+a4paper,
+total={170mm,257mm},
+left=20mm,
+top=20mm,
+footskip=2cm,
+}
+\newfontfamily{\arial}{Arial CE}
+\newfontfamily{\proxima}{Proxima Nova}
+\setmainfont{Proxima Nova}
+\renewcommand{\footrulewidth}{0.4pt}
+\setlength\footskip{1cm}
+\pagestyle{fancy}
+\setlength\textheight{220mm}
+\setlength\headheight{34pt}
+\pagenumbering{arabic}	
+\fancyhf{}
+\chead{\includegraphics[width=8cm]{logo.png}}
+\cfoot{ \color{gray} \arial [PLEASE CHECK IF THIS IS THE CORRECT VERSION BEFORE USE] | PRIVATE \& CONFIDENTIAL \\
+	\textit{AgniKul Cosmos Private Limited, Chennai | www.agnikul.in | humancapital@agnikul.in \\
+		910, Syndicate Bank Colony, Anna Nagar West Extension, Chennai - 600101 \\
+		+91 72472 46334  /  CIN: U74999TN2017PTC119779} \\ \textbf{\thepage}}
+\title{Video STREAMING REQUIREMENT DOCUMENT\_V1.0}
+\begin{document}
+	\maketitle
+	\thispagestyle{fancy}
+	\newpage
+	\tableofcontents
+	\newpage
+	\begin{center}
+		\textbf{Document history log:}
+	\end{center}
+		
+	\begin{center}
+		
+		\begin{tabular}{|p{5.5cm}|p{5cm}|p{5cm}|}
+			\hline
+			\textbf{Status (Baseline/Revision/Closed)} & \textbf{Effective Date} & \textbf{Description}\\
+			\hline
+			&   &  \\
+			\hline
+		\end{tabular}
+	\end{center}
+	
+	
+	\begin{center}
+			
+	\begin{table}[b]
+		Changes made from previous version: \\
+		\begin{tabular}{|p{5 cm}|p{5cm}|p{5cm}|}
+			\hline
+			\textbf{Section} & \textbf{SNo} & \textbf{Changes Made}\\
+			\hline
+			&  &  \\
+			\hline
+		\end{tabular}
+	\end{table}
+	\end{center}
+	
+	\input{chapter1}
+\end{document}

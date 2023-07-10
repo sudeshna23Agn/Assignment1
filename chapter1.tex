@@ -1,0 +1,343 @@
+\newpage
+
+\section{ETHERNET TRANSMITTER}
+\subsection{Requirements}
+
+\begin{enumerate}
+	\item Receives sequences commands from sequencer and forwards it to Engine computer and CRIO.
+	\item Receives Gimbal commands from control and shall forward them to the engine computer.
+	\item Receives health status from fault monitor and forwards to engine computer and CRIO.
+	\item Receives channel through DAQ channel and sends it to CRIO and telemetry computer.
+\end{enumerate}
+
+\subsection{Functional Flow}
+
+\begin{enumerate}
+	\item Then Ethernet transmitter shall start and initialize all the IPC message queues.
+	\item Upon command from sequencer,the Ethernet transmitter shall initiate TCP connection to CRIO/Telemetry which acts like TCP server.
+	\item When the TCP connection is established,the ethernet transmitter packs the received data and sends it to the TCP server.
+	
+\end{enumerate}
+
+
+
+\newpage
+
+\section{TIMER}
+\subsection{Requirements}
+
+\begin{enumerate}
+  \item The Timer process shall connect to ATS to receive CDT\_HOLD and CDT\_RELEASE commands.
+  \item When a CDT\_HOLD command is received,the timer shall signal other processes that hold is issued.
+  \item When a CDT\_RELEASE command is received the timer shall signal other processes the release is issued with the updated launch time.
+  \item The launch time(TO) shall be issued as absolute epoch time in microseconds and the CDT shall be restarted accordingly.
+\end{enumerate}
+
+\subsection{Functional Flow}
+
+\begin{enumerate}
+	\item 
+	
+\end{enumerate}
+
+
+\newpage
+
+\section{SEQUENCER}
+\subsection{Requirements}
+
+\begin{enumerate}
+	\item Gets sequences and commands from CRIO and executes it.
+	\item Receives the sequence feedback and proceeds next sequence.
+	\item The sequencer executes commands in its list,across the CDT time
+	\item The commands executed by the flight computer shall be executed within the flight computer.
+	\item The commands executed by the EC or CRIO shall be marked as active and 
+
+\end{enumerate}
+
+\subsection{Functional Flow}
+
+\begin{enumerate}
+	\item 
+	
+\end{enumerate}
+
+
+\newpage
+
+\section{ETHERNET RECEIVER}
+\subsection{Requirements}
+
+\begin{enumerate}
+	\item Sequences would be forwarded to sequencer.
+	\item Health status from CRIO shall be forworded to fault moniter.
+	\item if connection from CRIO is gone(fault ID is sent to fault monitor).
+	\item Health status from EC shall to forwarded to fault monitor
+	\item Sequence feedback shall be forworded to sequencer.
+	\item Fault IDs shall be forwarded to fault monitor.
+	
+\end{enumerate}
+
+\subsection{Functional Flow}
+
+\begin{enumerate}
+	\item
+	
+\end{enumerate}
+
+\subsection{Process states}
+
+\begin{table}[h!]
+	\begin{center}
+		\begin{tabular}{|p{3 cm}|p{5 cm}|p{5 cm}|}
+			\hline
+			\textbf{State} & \textbf{Mapped Enum} \\
+			\hline
+			&  \\
+			\hline
+			&  \\
+			\hline
+			&  \\
+			\hline
+			&  \\
+			\hline
+			&  \\
+			\hline
+			&  \\
+			\hline
+		\end{tabular}
+		\begin{center}
+			\textbf{Table 1: List of process states that are logged during runtime in Ethernet Receiver }
+		\end{center}
+	\end{center}
+\end{table}
+
+\subsection{List of faults}
+\begin{table}[h!]
+	\begin{center}
+		\begin{tabular}{|p{6 cm}|p{8 cm}|}
+			\hline
+			\textbf{Fault Group} & \textbf{Fault Description}\\
+			\hline
+			&   \\
+			\hline
+			&  \\
+			\hline
+			&  \\
+			\hline
+			&  \\
+			\hline
+			
+		\end{tabular}
+		\begin{center}
+			\textbf{Table 2: List of faults that can occur in Ethernet Receiver}
+		\end{center}
+	\end{center}
+\end{table}
+\newpage
+
+\section{GUIDANCE}
+\subsection{Requirements}
+
+\begin{enumerate}
+	\item 
+	\item 
+	\item 
+	\item 
+	
+\end{enumerate}
+
+\subsection{Functional Flow}
+
+\begin{enumerate}
+	\item
+	
+\end{enumerate}
+
+\subsection{Process states}
+
+\begin{table}[H]
+	\begin{center}
+		\begin{tabular}{|p{3 cm}|p{5 cm}|p{5 cm}|}
+			\hline
+			\textbf{State} & \textbf{Mapped Enum} \\
+			\hline
+			&  \\
+			\hline
+			&  \\
+			\hline
+			&  \\
+			\hline
+			&  \\
+			\hline
+			&  \\
+			\hline
+			&  \\
+			\hline
+		\end{tabular}
+		\begin{center}
+			\textbf{Table 1: List of process states that are logged during runtime in }
+		\end{center}
+	\end{center}
+\end{table}
+
+\subsection{List of faults}
+\begin{table}[H]
+	\begin{center}
+		\begin{tabular}{|p{6 cm}|p{8 cm}|}
+			\hline
+			\textbf{Fault Group} & \textbf{Fault Description}\\
+			\hline
+			&   \\
+			\hline
+			&  \\
+			\hline
+			&  \\
+			\hline
+			&  \\
+			\hline
+			
+		\end{tabular}
+		\begin{center}
+			\textbf{Table 2: List of faults that can occur in }
+		\end{center}
+	\end{center}
+\end{table}
+\newpage
+
+\section{NAVIGATION}
+\subsection{Requirements}
+
+\begin{enumerate}
+	\item 
+	\item 
+	\item 
+	\item 
+	
+\end{enumerate}
+
+\subsection{Functional Flow}
+
+\begin{enumerate}
+	\item
+	
+\end{enumerate}
+
+\subsection{Process states}
+
+\begin{table}[H]
+	\begin{center}
+		\begin{tabular}{|p{3 cm}|p{5 cm}|p{5 cm}|}
+			\hline
+			\textbf{State} & \textbf{Mapped Enum} \\
+			\hline
+			&  \\
+			\hline
+			&  \\
+			\hline
+			&  \\
+			\hline
+			&  \\
+			\hline
+			&  \\
+			\hline
+			&  \\
+			\hline
+		\end{tabular}
+		\begin{center}
+			\textbf{Table 1: List of process states that are logged during runtime in }
+		\end{center}
+	\end{center}
+\end{table}
+
+\subsection{List of faults}
+\begin{table}[H]
+	\begin{center}
+		\begin{tabular}{|p{6 cm}|p{8 cm}|}
+			\hline
+			\textbf{Fault Group} & \textbf{Fault Description}\\
+			\hline
+			&   \\
+			\hline
+			&  \\
+			\hline
+			&  \\
+			\hline
+			&  \\
+			\hline
+			
+		\end{tabular}
+		\begin{center}
+			\textbf{Table 2: List of faults that can occur in }
+		\end{center}
+	\end{center}
+\end{table}
+\newpage
+
+\section{IMU}
+\subsection{Requirements}
+
+\begin{enumerate}
+	\item 
+	\item 
+	\item 
+	\item 
+	
+\end{enumerate}
+
+\subsection{Functional Flow}
+
+\begin{enumerate}
+	\item
+	
+\end{enumerate}
+
+\subsection{Process states}
+
+\begin{table}[H]
+	\begin{center}
+		\begin{tabular}{|p{3 cm}|p{5 cm}|p{5 cm}|}
+			\hline
+			\textbf{State} & \textbf{Mapped Enum} \\
+			\hline
+			&  \\
+			\hline
+			&  \\
+			\hline
+			&  \\
+			\hline
+			&  \\
+			\hline
+			&  \\
+			\hline
+			&  \\
+			\hline
+		\end{tabular}
+		\begin{center}
+			\textbf{Table 1: List of process states that are logged during runtime in }
+		\end{center}
+	\end{center}
+\end{table}
+
+\subsection{List of faults}
+\begin{table}[H]
+	\begin{center}
+		\begin{tabular}{|p{6 cm}|p{8 cm}|}
+			\hline
+			\textbf{Fault Group} & \textbf{Fault Description}\\
+			\hline
+			&   \\
+			\hline
+			&  \\
+			\hline
+			&  \\
+			\hline
+			&  \\
+			\hline
+			
+		\end{tabular}
+		\begin{center}
+			\textbf{Table 2: List of faults that can occur in }
+		\end{center}
+	\end{center}
+\end{table}

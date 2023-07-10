@@ -1,6 +1,8 @@
 {
     "files.associations": {
         "socket.h": "c",
-        "cstdio": "c"
+        "cstdio": "c",
+        "math.h": "c",
+        "random": "c"
     }
 }

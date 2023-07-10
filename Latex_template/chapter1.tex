@@ -1,0 +1,21 @@
+\newpage
+\section{ Video Stream over UDP}
+\subsection{Requirements}
+
+\begin{enumerate}
+	\item Receive H.264 format raw video data through ethernet TCP protocol and saving that in raw binary file.
+	\item  Raw binary video file sent to vlc media player using UDP protocol and play it on vlc media player.
+\end{enumerate}
+
+\subsection{Functional Flow}
+
+\begin{enumerate}
+	\item Create a TCP socket for receiving H.264 raw video data.
+	\item Create a UDP socket for sending H.264 raw video data.
+	\item Receive  raw video data through ethernet using  TCP protocol and save it in a binary video file.
+	\item Read the binary video file and send it to the vlc media player through ethernet using UDP protocol.
+\end{enumerate}
+
+\subsection{Process states}
+
+\subsection{List of faults}

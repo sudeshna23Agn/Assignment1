@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "fourier_transforms.h": "c",
+        "crc_calc.h": "c"
+    }
+}
